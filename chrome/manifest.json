@@ -1,6 +1,6 @@
 {
   "name": "Dribbble Dimmer",
-  "version": "0.1",
+  "version": "0.9",
   "description": "Enables the viewing of shots over a dimmed background.",
   "content_scripts": [ {
     "css": [ "dribbble-dimmer.css" ],
