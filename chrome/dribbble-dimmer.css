@@ -2,7 +2,7 @@
   display: none;
   width: 100%;
   height: 100%;
-  background-color: #222;
+  background-color: #000;
   opacity: 0.95;
   position: absolute;
   top: 0;
@@ -13,23 +13,28 @@
   position: relative;
   z-index: 900;
 }
-#single-img a#dd-toggle {
+#single-img div#dd-toggle {
   position: absolute;
-  bottom: 12px;
-  right: 12px;
+  bottom: 0;
+  right: 0;
   background-color: rgba(255, 255, 255, 0.11);
   background-image: url('chrome-extension://__MSG_@@extension_id__/lightbulb.png');
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   z-index: 1000;
-  border-radius: 5px;
-  opacity: 0.75;
-  -webkit-border-radius: 5px;
+  border-radius: 10px 0px 0px 0px;
+  opacity: 0;
   -webkit-transition: opacity 0.2s ease-in;
 }
-#single-img a#dd-toggle:hover {
-    opacity: 1;
+#single-img:hover div#dd-toggle {
+  opacity: 0.75;
+  -webkit-transition-delay: 0.5s;
+}
+#single-img div#dd-toggle:hover {
+  opacity: 0;
+  cursor: none;
+  -webkit-transition-delay: 0s;
 }
